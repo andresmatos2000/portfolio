@@ -3,29 +3,44 @@
         <title></title>
     </head>
     <body>
-        <h1>Short Statement</h1>
-        <p>Hello, my name is Andres Matos. I'm an avid soccer player, love being outside, love coding, and enjoy learning.</p>
-        <hr>
-        <h2>Experience</h2>
-        <ol>
-            <li>I've had over two years of experience managing a shopify store</li>
-            <li>I've created three shopify stores for other clients</li>
-            <li>I worked as a food runner for a resturant</li>
-            <li>I'm starting to invest in stocks and forex</li>
-        </ol>
-        <hr>
-        <h2>Projects</h2>
-        <h3>Shopify Product Fetch</h3>
-        <p>One of the coolest projects I've worked on: Fetching shopify products and displaying them on the home page</p>
-        <img src="Images/LandingPageSearchPNG.PNG" />
-        <h3>Shopify Order App</h3>
-        <p>This project allows me to take sales data from shopify and output the ammount this table, showing our vendors how much they made last month</p>
-        <img src="Images/ArtistPayout.PNG" />
-        <p>The last project I'll show takes the product list from shopify, creates a sku for each product, and renames the products on my computer to match</p>
-        <h3>Shopify Sku App</h3>
-        <img src="Images/Sku.PNG" />
-        <p>All of this runs on my computer but go to <a href="www.backdropstock.com">Backdropstock.com</a> and check out the site</p>
-        <hr>
+        <div id="container">
+            <nav id="Desktop-Nav">
+                <ul>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#Contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <h1>Short Statement</h1>
+            <p>Hello, my name is Andres Matos. I'm an avid soccer player, love being outside, love coding, and enjoy learning.</p>
+            <hr>
+            <h2 id="Experience">Experience</h2>
+            <ol>
+                <li>I've had over two years of experience managing a shopify store</li>
+                <li>I've created three shopify stores for other clients</li>
+                <li>I worked as a food runner for a resturant</li>
+                <li>I'm starting to invest in stocks and forex</li>
+            </ol>
+            <hr>
+            <h2 id="Projects">Projects</h2>
+            <h3>Shopify Product Fetch</h3>
+            <p>One of the coolest projects I've worked on: Fetching shopify products and displaying them on the home page</p>
+            <img class="image" src="Images/LandingPageSearchPNG.PNG" />
+            <h3>Shopify Order App</h3>
+            <p>This project allows me to take sales data from shopify and output the ammount this table, showing our vendors how much they made last month</p>
+            <img class="image" src="Images/ArtistPayout.PNG" />
+            <p>The last project I'll show takes the product list from shopify, creates a sku for each product, and renames the products on my computer to match</p>
+            <h3>Shopify Sku App</h3>
+            <img class="image" src="Images/Sku.PNG" />
+            <p>All of this runs on my computer but go to <a href="www.backdropstock.com">Backdropstock.com</a> and check out the site</p>
+            <hr>
+            <h2 id="Contacts">Contacts</h2>
+            <p><a href="www.github.com/andresmatos2000">Github</a></p>
+            <p><a href="mailto: andresmatos2000@gmail.com">Email</a></p>
+            <p><a href="https://www.linkedin.com/in/andresmatos2000/">Linkedin</a></p>
+        </div>
         
 
     </body>
@@ -34,3 +49,45 @@
 
 
 </html>
+<style>
+    #container {
+        width: 90vw;
+        margin: 0 auto;
+    }
+    #Desktop-Nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    }
+    #Desktop-Nav ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    #Desktop-Nav ul li{
+        display: inline-block;
+        padding: 0;
+    }
+    #Desktop-Nav a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+
+    }
+    #Desktop-Nav a:hover{
+        background-color:green;
+    }
+    .image {
+        max-width:300px;
+    }
+    h1, h2, h3 {
+        font-family:'Courier New', Courier, monospace;
+        text-align: center;
+    }
+    p, li {
+        font-family:'Courier New', Courier, monospace;
+    }
+
+</style>
